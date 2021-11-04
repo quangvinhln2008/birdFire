@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="container">
+    <div class = "game-area"> 
+        <table>
+            <tr id="row1">
+                <td id="col1-1"></td>
+                <td id="col2-1"></td>
+                <td id="col3-1"></td>
+                <td id="col4-1"></td>
+                <td id="col5-1"></td>
+                <td id="col6-1"></td>
+                <td id="col7-1"></td>
+                <td id="col8-1"></td>
+                <td id="col9-1"></td>
+                <td id="col10-1"></td>
+            </tr>
+            <tr id="row2">
+                <td id="col1-2"></td>
+                <td id="col2-2"></td>
+                <td id="col3-2"></td>
+                <td id="col4-2"></td>
+                <td id="col5-2"></td>
+                <td id="col6-2"></td>
+                <td id="col7-2"></td>
+                <td id="col8-2"></td>
+                <td id="col9-2"></td>
+                <td id="col10-2"></td>
+            </tr>
+            <tr id="row3">
+                <td id="col1-3"></td>
+                <td id="col2-3"></td>
+                <td id="col3-3"></td>
+                <td id="col4-3"></td>
+                <td id="col5-3"></td>
+                <td id="col6-3"></td>
+                <td id="col7-3"></td>
+                <td id="col8-3"></td>
+                <td id="col9-3"></td>
+                <td id="col10-3"></td>
+            </tr>
+            <tr id="row4">
+                <td id="col1-4"></td>
+                <td id="col2-4"></td>
+                <td id="col3-4"></td>
+                <td id="col4-4"></td>
+                <td id="col5-4"></td>
+                <td id="col6-4"></td>
+                <td id="col7-4"></td>
+                <td id="col8-4"></td>
+                <td id="col9-4"></td>
+                <td id="col10-4"></td>
+            </tr>
+            <tr id="row5">
+                <td id="col1-5"></td>
+                <td id="col2-5"></td>
+                <td id="col3-5"></td>
+                <td id="col4-5"></td>
+                <td id="col5-5"></td>
+                <td id="col6-5"></td>
+                <td id="col7-5"></td>
+                <td id="col8-5"></td>
+                <td id="col9-5"></td>
+                <td id="col10-5"></td>
+            </tr>
+            <tr id="row6">
+                <td id="col1-6"></td>
+                <td id="col2-6"></td>
+                <td id="col3-6"></td>
+                <td id="col4-6"></td>
+                <td id="col5-6"></td>
+                <td id="col6-6"></td>
+                <td id="col7-6"></td>
+                <td id="col8-6"></td>
+                <td id="col9-6"></td>
+                <td id="col10-6"></td>
+            </tr>
+            <tr id="row7">
+                <td id="col1-7"></td>
+                <td id="col2-7"></td>
+                <td id="col3-7"></td>
+                <td id="col4-7"></td>
+                <td id="col5-7"></td>
+                <td id="col6-7"></td>
+                <td id="col7-7"></td>
+                <td id="col8-7"></td>
+                <td id="col9-7"></td>
+                <td id="col10-7"></td>
+            </tr>
+        </table>
+    </div>
+    <div class ="game-control">
+        <div class="game-control-sub" id="game-control-sub">
+            <div class="intruction-game" id = "intruction-game">
+                <h3>Intruction game:</h3>
+                <p>In this game, you will guess location of 3 target on the screen. 
+                    You have 5 times to guess. To start the game you type your name
+                     then click "START" button, then
+                        type x (1<= x <= 10) - is horizal line
+                        , y (1<= y <= 7) is vertical line.
+                </p>
+                <div class="user-information">
+                    <h3>To start please enter your name</h3>
+                    <input type="text" class="text-input" id ="userName" placeholder="Your name here">
+                    <input type = "button" class= "button-start" id = "button-start" value = "START"/>
+                </div>
+            </div>
+            <div class = "start-game" id = "start-game">
+                <div class="round">Round
+                    <p class = "count-round" id = "count-round"><span>0</span></p>
+                </div>
+                <div class="score">Score
+                    <p class = "count-score" id = "count-score"><span>0</span></p>
+                </div>
+                <div class="user-input" id="user-input">
+                    <h3 id="enter-location">Enter your location</h3> 
+                    <input type="text" class="text-input-locaton" id="x" placeholder="x">
+                    <input type="text" class="text-input-locaton" id="y" placeholder="y">
+                    <button class="button-start" id = "button-fire">Fire</button>            
+                </div>
+            </div>
+            <div class="start-game none-border" id ="restart">
+                <button class="button-start" id = "button-restart">Restart</button>     
+            </div>
+        </div>
+    </div>
+    <script src="battleship.js"></script>
+</body>
+</html>

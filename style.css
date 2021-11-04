@@ -1,0 +1,153 @@
+body 
+{
+    overflow: hidden;
+}
+.container {
+    background-color: black;
+    display: flex;
+    margin: 20px 50px;
+}
+
+h3 
+{
+    text-shadow: 3px 2px red;
+    color: White;
+}
+
+p 
+{
+    color: White;
+    line-height: 1.5;
+}
+
+.game-area {
+    position: relative;
+    width: 950px;
+    /* margin-left: 50px; */
+    background: url(image/backgroud.jpg);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.game-area table td img{
+    max-width: 70px;
+}
+
+.game-control 
+{
+    position:relative;
+    display: inline-block;
+    /*background-color: cadetblue;*/
+    margin-left: 30px;
+   /* background-color: #303133;*/
+    border-radius: 25px;
+}
+
+.intruction-game 
+{
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+    width: 320px;
+}
+
+.start-game {
+    display: none;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+    width: 320px;
+    text-align:center
+}
+
+.none-border{
+    border: 0px;
+}
+
+.button-start
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.text-input 
+{
+    margin: auto;
+    padding: 5px;
+    width: 150px;
+    height: 38px;
+    border: 0px;
+    background-color: Aqua;
+}
+
+.text-input-locaton 
+{
+    margin: auto;
+    padding: 5px;
+    width: 50px;
+    height: 38px;
+    border: 0px;
+    background-color: Aqua;
+}
+.round {
+    display: block;
+    width: 100px;
+    /*height: 50px;*/
+    margin:auto;
+    margin-top: 20px;
+    background-color: White;
+    color: black;
+    text-align: center;
+    border: 2px solid #4CAF50;
+    border-radius : 200px;
+    
+}
+
+.count-round 
+{
+    color:Black;
+}
+
+.score {
+    display: block;
+    width: 100px;
+    /*height: 50px;*/
+    margin:auto;
+    margin-top: 20px;
+    background-color: White;
+    color: black;
+    text-align: center;
+    border: 2px solid #4CAF50;
+    border-radius : 200px;
+    
+}
+
+.count-score 
+{
+    color:Black;
+}
+
+table {
+    border-spacing: 0px;
+    border:1px solid;
+    /* opacity: 0.4; */
+
+}
+
+td {
+    width: 94px;
+    height: 94px;
+    border:1px solid transparent;
+
+}
