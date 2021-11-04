@@ -80,27 +80,27 @@ function fire() {
         ships.splice(i, 1);
       }
     }
-    if(countRound == 5) {
-      var parent = document.getElementById("user-input");
-      var childrenX = document.getElementById("x");
-      var childrenY = document.getElementById("y");
-      var childrenButtonFire = document.getElementById("button-fire");
-      var result = '';
-      if(countScore >= 3) {
-        parent.removeChild(childrenX);
-        parent.removeChild(childrenY);
-        parent.removeChild(childrenButtonFire);
-        result = document.createElement("h1");
-        document.getElementById("enter-location").innerHTML = userName.toUpperCase()+ " WIN!";
-        document.getElementById("restart").style.display = "block";
-      } else {
+    var parent = document.getElementById("user-input");
+    var childrenX = document.getElementById("x");
+    var childrenY = document.getElementById("y");
+    var childrenButtonFire = document.getElementById("button-fire");
+    var result = '';
+
+    if  (countScore == 3){
+      parent.removeChild(childrenX);
+      parent.removeChild(childrenY);
+      parent.removeChild(childrenButtonFire);
+      result = document.createElement("h1");
+      document.getElementById("enter-location").innerHTML = userName.toUpperCase()+ " WIN!";
+      document.getElementById("restart").style.display = "block";
+    } else if(countRound == 5 && countScore < 3) {
+        debugger
         parent.removeChild(childrenX);
         parent.removeChild(childrenY);
         parent.removeChild(childrenButtonFire);
         result = document.createElement("h1");
         document.getElementById("enter-location").innerHTML = userName.toUpperCase() + " LOSE!";
         document.getElementById("restart").style.display = "block";
-      }
     }
   }
 }
